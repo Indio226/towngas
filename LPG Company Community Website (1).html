@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPG Community Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff5733;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .video-card {
+            border: 1px solid #ddd;
+            padding: 10px;
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+        .video-card video {
+            width: 100%;
+        }
+        .video-card .actions {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+        .video-card .actions button {
+            background-color: #ff5733;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .video-card .actions button:hover {
+            background-color: #e04e2c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our LPG Community</h1>
+        <p>Connecting Dealers, Households, and Commercial Customers</p>
+    </header>
+    <nav>
+        <a href="#dealers">Dealers</a>
+        <a href="#household">Household</a>
+        <a href="#commercial">Commercial</a>
+    </nav>
+    <section id="dealers">
+        <h2>For Dealers</h2>
+        <p>Find your nearest LPG dealer and learn about the services they offer. Use the map below to locate branches.</p>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093745!2d144.9537363153168!3d-37.81627974202198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5770d1f3c3f5e0!2sLPG%20Dealer%20Example!5e0!3m2!1sen!2sph!4v1697042345678!5m2!1sen!2sph"></iframe>
+        </div>
+        <p><strong>Disclaimer:</strong> All dealers listed on this page are legitimate and approved by our company.</p>
+    </section>
+    <section id="household">
+        <h2>For Household Customers</h2>
+        <p>Join our community by registering your first purchase using the QR code found on our products.</p>
+        <p>Share your experiences, subscribe, and upload videos about your journey with our LPG products. Engage with others by liking, starring, or giving a thumbs up to their videos.</p>
+        <div class="video-container">
+            <div class="video-card">
+                <video controls>
+                    <source src="example-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="actions">
+                    <button>❤️</button>
+                    <button>⭐</button>
+                    <button>👍</button>
+                </div>
+            </div>
+            <div class="video-card">
+                <video controls>
+                    <source src="example-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="actions">
+                    <button>❤️</button>
+                    <button>⭐</button>
+                    <button>👍</button>
+                </div>
+            </div>
+            <!-- Add more video cards as needed -->
+        </div>
+    </section>
+    <section id="commercial">
+        <h2>For Commercial Customers</h2>
+        <p>Advertise your business, including outlets, shops, showrooms, restaurants, and hotels. Upload videos and showcase your brand to our exclusive community.</p>
+        <div class="video-container">
+            <div class="video-card">
+                <video controls>
+                    <source src="commercial-example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="actions">
+                    <button>❤️</button>
+                    <button>⭐</button>
+                    <button>👍</button>
+                </div>
+            </div>
+            <!-- Add more video cards as needed -->
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 LPG Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
